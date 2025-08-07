@@ -1,3 +1,34 @@
 body{
-    color: #a7276d;
+    color: #790946;
+}
+
+#titulo{
+    color: #276da7;
+}
+
+.texto{
+    color: #27a758;
+}
+
+p.letra{
+    color: #8a9c3a;
+}
+p.palabra{
+    color: #da2e2e;
+}
+p.especifica{
+    color: #0bdb5b;
+}
+
+div p{
+    color: #44b2b9;
+}
+
+div h2, div h3 {
+    color: #a008be;
+}
+
+*{
+    color: #000000;
+    font-size: 22px;
 }

@@ -4,13 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iniciando en css</title>
-<!-- La mejor forma de aplciar css a una pagina web es  importando un archivo css, para ello:-->
+<!-- La mejor forma de aplicar css a una página web es importando un archivo css, para ello:-->
     <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
-    <h1>Iniciando en css</h1>
+<!--Título con selector id para aplicar css -->
+    <h1 id="titulo">Iniciando en css</h1> 
+    <p>Hay varias formas de escribir css para una página, la más ordenada, es importado un archivo por aparte en donde esté todo el código css, aunque el código de css también se puede escribir dentro del archivo html.</p>
+    <p>En esta práctica el primer css aplicado es que a todo el texto que este dentro de la etiqueta body va a tener un color morado, pero con un selector que se va a ver más adelante pasara a ser negro</p>
+<!-- Párrafo con selector class para aplicar css -->
+    <p class="texto">Pero si se quiere que un elemento en concreto sea diferente, entonces se utilizan los selectores: <strong>id y class</strong>, por ejemplo:</p>
+    <ul>
+        <li><strong>id="titulo"</strong>, para el título de esta página </li>
+        <li><strong>class="texto"</strong> para el tercer párrafo de la página</li>
+    </ul>
+    <p>Para llamar un selector en las hojas de estilo es:</p>
+    <ul>
+        <li><strong>Para id</strong> #nombredelselector, ejemplo: <strong>#titulo</strong></li>
+        <li><strong>Para class</strong> .nombredelselector, ejemplo: <strong>.texto</strong></li>
+    </ul>
+<hr>
+<!-- Cuidado con los nombres de los selectores -->
+    <p>Se debe tener cuidado con los nombres que se asignan a los selectores, por ejemplo:</p>
+    <h1 class="texto">En este título se tiene el selector <strong>class="texto"</strong></h1>
+    <p class="texto">En este párrafo se tiene el selector <strong>class="texto"</strong></p>
+    <p class="texto especial">En este párrafo se tiene el selector <strong>class="texto especial"</strong></p>
+    <p class="especial">En este párrafo se tiene el selector <strong>class="especial"</strong></p>
+    <p>Se observa que con todos los selectores de tipo class que tienen la palabra <strong> <em>texto</em></strong>, se aplica el estilo, no importa si tienen más texto</p>
+    <p><strong>Si se desea que <em>solo los párrafos</em> tengan color de letra y no otras etiquetas, entonces en la hoja de estilos se debe escribir <em>p.texto</em></strong> </p>
 
-
+<hr>
+<!-- Seleccionando en css solo los párrafos -->
+    <p>En esta parte se observa lo antes comentado, se selecciona que los párrafos sean los que se van a modificar y no otras etiquetas, en este caso colocando en css p.letra</p>
+    <h1 class="letra">En este título se tiene el selector <strong>class="letra"</strong></h1>
+    <p class="letra">En este párrafo se tiene el selector <strong>class="letra"</strong></p>
+    <p class="letra diferente">En este párrafo se tiene el selector <strong>class="letra diferente"</strong></p>
+    <p class="diferente">En este párrafo se tiene el selector <strong>class="diferente"</strong></p>
+    <p>Ahora sí solo las etiquetas de p que tengan el selector class y la palabra letra son los que se modificaron</p>
+<hr>
+<!-- Sobreponer estilos-->
+    <p>En css se pueden sobreponer estilos, esto ya que el estilo que se aplique va a ser el último declarado, para este ejemplo en la hoja de estilos se va a colocar primero que: </p>
+    <p><strong>p.palabra va a ser de color rojo</strong> y debajo de esa instrucción se coloca que: <strong>p.especifica va a ser de color verde</strong></p>
+    <p class="palabra">En este párrafo se tiene el selector <strong>class="palabra"</strong></p>
+    <p class="palabra especifica">En este párrafo se tiene el selector <strong>class="palabra especifica"</strong></p>
+    <p class="especifica">En este párrafo se tiene el selector <strong>class="especifica"</strong></p>
+    <p>Por ello el orden en que se escribe el código en css es crucial</p>
+<hr>
+<!-- Selectores con div -->
+    <p>En esta parte se va a colocar parte del contenido dentro de un div, para aplicar un estilo solo a los p que hay dentro de ese div</p>
+    <p>Para ello en css se coloca <strong>div p{}</strong></p>
+    <div>
+        <p>Este párrafo está dentro del div</p>
+        <h2>Este h2 está en el div</h2>
+        <h3>Este h3 también está dentro del div</h3>
+        <p>Este es otro p que está en el div</p>
+    </div>
+    <p>En el caso de h2 y h3 se están seleccionando a la vez y solo los que están dentro del div : <strong>div h2, div h3 {}</strong></p>
+<hr>
+    <p>El ultimo selector que se tiene es el selector universal: <strong>*</strong>, este selecciona todos los elementos a los que no se les ha definido su propiedad, <br>
+    por ejemplo, con ese selector se va a colocar todo el texto del mismo tamaño, y se le va a decir que el color va a ser negro, pero si ya antes se ha designado un color a la letra, no lo va a modificar.</p>
 </body>
 </html>
