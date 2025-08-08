@@ -6,6 +6,7 @@ body{
     color: #276da7;
 }
 
+/* Selectores */
 .texto{
     color: #27a758;
 }
@@ -32,3 +33,41 @@ div h2, div h3 {
     color: #000000;
     font-size: 22px;
 }
+
+
+/*Propiedades de la apariencia del texto*/
+    /* text aling */
+#left { text-align: left;}
+
+#right{ text-align: right;}
+
+#center { text-align: center;}
+
+#justify{ text-align: justify;}
+
+#start { text-align: start;}
+
+#end { text-align: end;}
+
+    /* text indent*/
+#indent{ text-indent: 50px;}
+
+    /* tect decoration */
+#none{ text-decoration: none;}
+
+#underline{ text-decoration: underline;}
+
+#overline{ text-decoration: overline;}
+
+#line-through{ text-decoration: line-through; }
+
+    /* text transform */
+#none{ text-transform: none;}
+#capitalize{ text-transform: capitalize;}
+#uppercase{ text-transform: uppercase;}
+#lowercase{ text-transform: lowercase;}
+
+    /* Espacios */
+#letter{ letter-spacing: 10px;}
+#line{ line-height: 100px;}
+#word{ word-spacing: 25px;}
