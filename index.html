@@ -7,7 +7,12 @@
 <!-- La mejor forma de aplicar css a una página web es importando un archivo css, para ello:-->
     <link rel="stylesheet" href="style.css">
 
+    <!-- Exportando fuentes desde google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
+
 <body>
 <!--Título con selector id para aplicar css -->
     <h1 id="titulo">Iniciando en css</h1> 
@@ -110,6 +115,54 @@
 
     <h3>word spacing</h3>
     <p id="word">Este párrafo tiene la propiedad de <strong>word spacing</strong> (Espacio entre palabras) 25px</p>
+
+    
+    <!-- Propiedades de fuente -->
+    <h2>Propiedades de fuente</h2>
+    <h3>Font familly</h3> <!-- Fuente -->
+    <p id="serif">Este párrafo la fuente de la letra de tipo serif: Times New Roman, letra con remates o terminales que son pequeños adornos ubicados generalmente en los extremos de las líneas de los caracteres </p>
+    <p id="sans-serif">Este párrafo la fuente de la letra de tipo sans-serif: Arial</p>
+    <p id="monospace">Este párrafo la fuente de la letra de tipo monospace: Courier, letra con el mismo ancho</p>
+    <p id="cursive">Este párrafo la fuente de la letra de tipo cursive, letra estilo manuscrito</p>
+    <p id="fantasy">Este párrafo la fuente de la letra de tipo fantasy fuente decorativa</p>
+    <hr>
+    
+    <h3>Fuente desde Google fonts</h3> <!-- Fuente Google -->
+    <p>Para agregar más fuentes de letra, se puede exportar el código desde Google Fonts y colocar el código en el head del html</p>
+    <p id="roboto">ejemplo, este párrafo está con: font-family: 'Roboto'</p>
+
+    <h3>Font size</h3> <!-- Tamaño fuente -->
+    <p id="size">Define el tamaño de las letras, en este caso se tiene de 15px</p>
+    <hr>
+
+    <h3>Font style</h3> <!-- Estilo de la Fuente -->
+    <p id="normal">Define el estilo del texto, este párrafo tiene estilo normal</p>
+    <p id="italic">Este párrafo tiene estilo italic</p>
+    <p id="oblique">Este párrafo tiene estilo oblique</p>
+    <hr>
+
+    <h3>Font weight</h3> <!-- Grosor -->
+    <p>Define el grosor de la letra, para mejor este estilo, se coloca el tipo de letra roboto, ya que hay letras que no permiten visualizar este efecto</p>
+    <p id="thin">Este párrafo tiene estilo Thin o 100 (el minimo)</p>
+    <p id="extra-light">Este párrafo tiene estilo Extra-light o 200</p>
+    <p id="light">Este párrafo tiene estilo Light o 300</p>
+    <p id="normal">Este párrafo tiene estilo Normal o 400</p>
+    <p id="medium">Este párrafo tiene estilo Medium o 500</p>
+    <p id="semi-Bold">Este párrafo tiene estilo Semi-Bold o 600</p>
+    <p id="bold">Este párrafo tiene estilo Bold o 700</p>
+    <p id="extra-Bold">Este párrafo tiene estilo Extra-Bold o 800 </p>
+    <p id="black">Este párrafo tiene estilo Black o 900</p>
+    <hr>
+
+    <h3>Font variant</h3> 
+    <p id="variant">En este párrafo se aplica font variant normal</p>
+    <p id="small-caps">En este párrafo se aplica font variant small-caps</p>
+    <hr>
+    
+    <h3>Font general</h3>
+    <p>Usando solo la etiqueta font se pueden aplicar todos los estilos</p>
+    <p id="font">Este párrafo tiene el siguiente estilo: font: italic small-caps bold 18px "Georgia", serif;</p>
+    <hr>
 
 </body>
 </html>

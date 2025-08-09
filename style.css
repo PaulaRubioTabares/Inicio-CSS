@@ -71,3 +71,40 @@ div h2, div h3 {
 #letter{ letter-spacing: 10px;}
 #line{ line-height: 100px;}
 #word{ word-spacing: 25px;}
+
+/* Propiedades de fuente*/
+    /* Fuente de letra */
+#serif{ font-family: 'Times New Roman', Times, serif;}
+#sans-serif{ font-family: Arial, Helvetica, sans-serif;}
+#monospace{ font-family: 'Courier New', Courier, monospace;}
+#cursive{ font-family: cursive;}
+#fantasy{ font-family: fantasy;}
+
+    /* Google fonts */
+#roboto, #thin, #extra-light, #light, #normal, #medium, #semi-Bold, #bold, #extra-Bold, #black {font-family: 'Roboto', sans-serif;}
+
+    /* Tamaño letra */
+#size{ font-size: 15px;}
+
+    /* Font style */
+#normal{ font-style: normal;}
+#italic{ font-style: italic;}
+#oblique{ font-style: oblique;}   
+
+    /* Font weight */
+#thin{ font-weight: 100;}
+#extra-light{ font-weight: 200;}
+#light{ font-weight: 300;}
+#normal{ font-weight: 400;}
+#medium{ font-weight: 500;}
+#semi-Bold{ font-weight: 600;}
+#bold{ font-weight: 700;}
+#extra-Bold {font-weight: 800;}
+#black { font-weight: 900;}
+
+    /* Font variant */
+#variant{ font-variant: normal;}
+#small-caps{ font-variant: small-caps;}
+
+    /* Font */
+#font{font: italic small-caps bold 18px"Georgia", serif;}
